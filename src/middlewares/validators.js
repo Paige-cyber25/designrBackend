@@ -19,6 +19,6 @@ const validateLogin = (req,res,next)=> {
             message:error.details[0].message
         })
     }
-    return next;
+    return next();
 }
 module.exports= {validateRegister, validateLogin}
