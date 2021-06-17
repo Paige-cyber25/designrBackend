@@ -1,4 +1,4 @@
-const mongoose = require('./../database')
+const mongoose = require('../database')
 const Schema = mongoose.Schema
 const courseSchema = new Schema({
   Course: {

@@ -1,4 +1,4 @@
-const courseSchema = require('../models/course.js')
+const courseSchema = require('../models/course');
 
 const courseModel = async (req, res)=>{
     // console.log(req.userId, 'courses')

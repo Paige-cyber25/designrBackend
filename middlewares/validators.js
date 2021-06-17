@@ -1,4 +1,4 @@
-const {registerBodySchema, loginBodySchema} = require('../utils/validatorSchema');
+const {registerBodySchema, loginBodySchema} = require('../src/utils/validatorSchema');
 
 const validateRegister = (req, res, next) => {
     const {error} = registerBodySchema(req.body);

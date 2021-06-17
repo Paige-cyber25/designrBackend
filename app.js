@@ -9,8 +9,8 @@ const cors = require('cors')
 
 // const helpers = require('./helpers')
 
-const usersRouter = require('./routes/users.js')
-const courseRouter = require('./routes/course.js')
+const usersRouter = require('./routes/user')
+const courseRouter = require('./routes/course')
 
 
 // app.use(logger('dev'))
