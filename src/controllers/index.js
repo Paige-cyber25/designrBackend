@@ -1,3 +1,3 @@
-const {registerUser,loginUser, getUser} = require('./user');
+// const {registerUser,loginUser, getUser} = require('./user');
 
-module.exports = {registerUser, loginUser, getUser};
+// module.exports = {registerUser, loginUser, getUser};

@@ -1,12 +1,16 @@
-const express = require('express');
-const {registerUser,loginUser, getUser} = require('../controllers');
-const isUser  = require('../middlewares/isUser');
-const {validateRegister, validateLogin} = require('../middlewares/validators');
+var express = require('express');
+var router = express.Router();
+const {signin, signup} = require('../controllers/user');
 
-const router = new express.Router();
-router.post('/register', validateRegister, registerUser);
-router.post('/login', validateLogin, loginUser);
-router.get('/me', isUser, getUser);
+// const auth = require('../middlewares/auth')
+
+// const upload = require('../middlewares/mutter')
+/* GET users listing. */
+router.post('/signin', signin)
+router.post('/signup', signup)
+
+
+
 
 
 module.exports = router;
