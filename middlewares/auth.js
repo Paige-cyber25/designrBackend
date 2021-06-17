@@ -1,25 +1,3 @@
-// const jwt = require('jsonwebtoken')
-
-// const auth = async (req, res, next)=>{
-//     console.log(req.headers.Authorization)
-//     try {
-//         const token = awairization.split(" ")[1];
-//         if(!token) return res.statust req.headers.Autho(401).json({msg: 'unauthorized'})
-//         const isCustomAuth = token < 500
-//         let decodedData;
-//         if(token && isCustomAuth) {
-//             decodedData = jwt.verify(token, 'test')
-//             req.userId = decodedData.id
-//         } else{
-//             decodedData = jwt.decode(token)
-//             req.userId = decodedData.sub
-//         }
-
-//         next()
-//     } catch (error) {
-        
-//     }
-// }
 
 const jwt = require('jsonwebtoken')
 module.exports = function (req, res, next) {
